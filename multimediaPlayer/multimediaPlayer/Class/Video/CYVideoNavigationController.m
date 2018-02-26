@@ -1,24 +1,23 @@
 //
-//  ViewController.m
+//  CYVideoNavigationController.m
 //  multimediaPlayer
 //
 //  Created by ccy on 2018/2/26.
 //  Copyright © 2018年 ccy. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CYVideoNavigationController.h"
 
-@interface ViewController ()
+@interface CYVideoNavigationController ()
 
 @end
 
-@implementation ViewController
+@implementation CYVideoNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view.
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

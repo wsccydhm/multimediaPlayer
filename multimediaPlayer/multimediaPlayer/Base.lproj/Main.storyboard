@@ -1,24 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Do-gV-8mV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--音乐播放-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CYAudioListViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T97-Tt-Thw">
+                                <rect key="frame" x="156.5" y="318.5" width="62" height="30"/>
+                                <state key="normal" title="播放音乐"/>
+                                <connections>
+                                    <segue destination="gWc-eG-sgY" kind="show" id="Hrp-jp-HGM"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="T97-Tt-Thw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6di-nw-Wfz"/>
+                            <constraint firstItem="T97-Tt-Thw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CWk-IQ-hfA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="音乐播放" id="kRS-lh-uBx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1121" y="133"/>
+        </scene>
+        <!--视频播放器-->
+        <scene sceneID="S90-tK-eC4">
+            <objects>
+                <navigationController id="ynj-6A-kdO" customClass="CYVideoNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="视频播放器" id="ymz-Ns-Jqy"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bUD-vw-hkf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xyX-By-EUS" kind="relationship" relationship="rootViewController" id="Wkd-6J-gyG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJ0-rD-los" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449" y="841"/>
+        </scene>
+        <!--视频播放-->
+        <scene sceneID="GsB-9O-CtA">
+            <objects>
+                <viewController id="xyX-By-EUS" customClass="CYVideoListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MOZ-g9-z3I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfC-aJ-Hs6">
+                                <rect key="frame" x="156" y="318.5" width="62" height="30"/>
+                                <state key="normal" title="播放视频"/>
+                                <connections>
+                                    <segue destination="4cB-1x-d5c" kind="show" id="ldi-6e-dcj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VfC-aJ-Hs6" firstAttribute="centerY" secondItem="MOZ-g9-z3I" secondAttribute="centerY" id="Vpr-u3-Sqg"/>
+                            <constraint firstItem="VfC-aJ-Hs6" firstAttribute="centerX" secondItem="MOZ-g9-z3I" secondAttribute="centerX" id="i9B-Mq-bkk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dJX-XB-aMQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="视频播放" id="NnA-Xz-fWF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3l-Mz-tWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136" y="840"/>
+        </scene>
+        <!--Video Play View Controller-->
+        <scene sceneID="mkC-sQ-Mto">
+            <objects>
+                <viewController id="4cB-1x-d5c" customClass="CYVideoPlayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LG1-sk-2Yq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="igb-qm-rfD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5V-7l-9hN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835" y="839"/>
+        </scene>
+        <!--Audio Play View Controller-->
+        <scene sceneID="LdS-c9-yi3">
+            <objects>
+                <viewController id="gWc-eG-sgY" customClass="CYAudioPlayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PXO-Wp-7jL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Eb-ZT-bdh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="426"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGk-Ko-gau">
+                                <rect key="frame" x="0.0" y="490" width="375" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GGk-Ko-gau" firstAttribute="top" secondItem="7Eb-ZT-bdh" secondAttribute="bottom" id="0At-37-5f7"/>
+                            <constraint firstItem="GGk-Ko-gau" firstAttribute="top" secondItem="7Eb-ZT-bdh" secondAttribute="bottom" id="7v0-Rs-ZGR"/>
+                            <constraint firstItem="7Eb-ZT-bdh" firstAttribute="width" secondItem="GGk-Ko-gau" secondAttribute="height" multiplier="375:128" id="9Uz-I2-zuo"/>
+                            <constraint firstItem="Qvz-XV-47O" firstAttribute="trailing" secondItem="7Eb-ZT-bdh" secondAttribute="trailing" id="AoZ-OO-DVQ"/>
+                            <constraint firstItem="Qvz-XV-47O" firstAttribute="bottom" secondItem="GGk-Ko-gau" secondAttribute="bottom" id="BQl-EN-dyC"/>
+                            <constraint firstItem="7Eb-ZT-bdh" firstAttribute="top" secondItem="Qvz-XV-47O" secondAttribute="top" id="FaI-Nh-OD8"/>
+                            <constraint firstItem="GGk-Ko-gau" firstAttribute="leading" secondItem="Qvz-XV-47O" secondAttribute="leading" id="Ned-IX-TK2"/>
+                            <constraint firstItem="7Eb-ZT-bdh" firstAttribute="leading" secondItem="Qvz-XV-47O" secondAttribute="leading" id="blV-K3-DSi"/>
+                            <constraint firstItem="Qvz-XV-47O" firstAttribute="trailing" secondItem="GGk-Ko-gau" secondAttribute="trailing" id="ppL-ct-bvL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qvz-XV-47O"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfj-zW-S40" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1794" y="133"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wRC-OH-Euh">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7Do-gV-8mV" customClass="CYTabBarController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Blj-vn-tOt">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.33452690969999999" blue="0.016221788189999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wdc-Nn-9jh" kind="relationship" relationship="viewControllers" id="P4d-UG-N2v"/>
+                        <segue destination="ynj-6A-kdO" kind="relationship" relationship="viewControllers" id="sL1-E7-C3U"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JGc-Uw-LZl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-158.40000000000001" y="133.13343328335833"/>
+        </scene>
+        <!--音乐播放界面-->
+        <scene sceneID="oyN-1L-HCo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wdc-Nn-9jh" customClass="CYAudioNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="音乐播放界面" id="G3w-5N-bt5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CGb-rA-u5g">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Dud-Nq-Wnx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IqI-Ie-eiz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="480" y="133.13343328335833"/>
         </scene>
     </scenes>
 </document>

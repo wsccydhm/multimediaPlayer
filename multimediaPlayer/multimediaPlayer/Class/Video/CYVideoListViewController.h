@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CYVideoViewController.h
 //  multimediaPlayer
 //
 //  Created by ccy on 2018/2/26.
@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import "CYBaseViewController.h"
+@interface CYVideoListViewController : CYBaseViewController
 
 @end
-
