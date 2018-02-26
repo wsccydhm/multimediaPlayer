@@ -16,6 +16,8 @@
 		226EE5BD2043D86900AF0C8E /* CYAudioListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226EE5BC2043D86900AF0C8E /* CYAudioListViewController.m */; };
 		226EE5C02043D8A800AF0C8E /* CYAudioPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226EE5BF2043D8A800AF0C8E /* CYAudioPlayViewController.m */; };
 		226EE5C32043D8DD00AF0C8E /* CYVideoPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226EE5C22043D8DD00AF0C8E /* CYVideoPlayViewController.m */; };
+		226EE5C82043E4FF00AF0C8E /* UIView+CYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 226EE5C72043E4FF00AF0C8E /* UIView+CYCategory.m */; };
+		226EE5D12043F4CE00AF0C8E /* UIImage+CYComond.m in Sources */ = {isa = PBXBuildFile; fileRef = 226EE5D02043F4CE00AF0C8E /* UIImage+CYComond.m */; };
 		22BF5C902043A08B0076AEBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BF5C8F2043A08B0076AEBB /* AppDelegate.m */; };
 		22BF5C962043A08B0076AEBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BF5C942043A08B0076AEBB /* Main.storyboard */; };
 		22BF5C982043A08B0076AEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BF5C972043A08B0076AEBB /* Assets.xcassets */; };
@@ -43,6 +45,11 @@
 		226EE5BF2043D8A800AF0C8E /* CYAudioPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYAudioPlayViewController.m; sourceTree = "<group>"; };
 		226EE5C12043D8DD00AF0C8E /* CYVideoPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYVideoPlayViewController.h; sourceTree = "<group>"; };
 		226EE5C22043D8DD00AF0C8E /* CYVideoPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYVideoPlayViewController.m; sourceTree = "<group>"; };
+		226EE5C62043E4FF00AF0C8E /* UIView+CYCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CYCategory.h"; sourceTree = "<group>"; };
+		226EE5C72043E4FF00AF0C8E /* UIView+CYCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CYCategory.m"; sourceTree = "<group>"; };
+		226EE5CB2043EB8700AF0C8E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		226EE5CF2043F4CE00AF0C8E /* UIImage+CYComond.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+CYComond.h"; sourceTree = "<group>"; };
+		226EE5D02043F4CE00AF0C8E /* UIImage+CYComond.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CYComond.m"; sourceTree = "<group>"; };
 		22BF5C8B2043A08B0076AEBB /* multimediaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = multimediaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22BF5C8E2043A08B0076AEBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		22BF5C8F2043A08B0076AEBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +75,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		226EE5C42043E4AF00AF0C8E /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		226EE5C52043E4BE00AF0C8E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				226EE5C62043E4FF00AF0C8E /* UIView+CYCategory.h */,
+				226EE5C72043E4FF00AF0C8E /* UIView+CYCategory.m */,
+				226EE5CF2043F4CE00AF0C8E /* UIImage+CYComond.h */,
+				226EE5D02043F4CE00AF0C8E /* UIImage+CYComond.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		226EE5C92043EB4200AF0C8E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				226EE5A02043B7FC00AF0C8E /* CYTabBarController.h */,
+				226EE5A12043B7FC00AF0C8E /* CYTabBarController.m */,
+				226EE5A92043B84C00AF0C8E /* CYNavigationController.h */,
+				226EE5AA2043B84C00AF0C8E /* CYNavigationController.m */,
+				226EE5AC2043B8C200AF0C8E /* CYBaseViewController.h */,
+				226EE5AD2043B8C200AF0C8E /* CYBaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		22BF5C822043A08B0076AEBB = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +140,8 @@
 		22BF5CA42043A69F0076AEBB /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				226EE5C52043E4BE00AF0C8E /* Category */,
+				226EE5C42043E4AF00AF0C8E /* Tool */,
 				22BF5CA72043A6D50076AEBB /* Main */,
 				22BF5CA62043A6C40076AEBB /* Video */,
 				22BF5CA52043A6A80076AEBB /* Audio */,
@@ -138,14 +178,10 @@
 		22BF5CA72043A6D50076AEBB /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				226EE5C92043EB4200AF0C8E /* Controller */,
 				22BF5C8E2043A08B0076AEBB /* AppDelegate.h */,
 				22BF5C8F2043A08B0076AEBB /* AppDelegate.m */,
-				226EE5A02043B7FC00AF0C8E /* CYTabBarController.h */,
-				226EE5A12043B7FC00AF0C8E /* CYTabBarController.m */,
-				226EE5A92043B84C00AF0C8E /* CYNavigationController.h */,
-				226EE5AA2043B84C00AF0C8E /* CYNavigationController.m */,
-				226EE5AC2043B8C200AF0C8E /* CYBaseViewController.h */,
-				226EE5AD2043B8C200AF0C8E /* CYBaseViewController.m */,
+				226EE5CB2043EB8700AF0C8E /* PrefixHeader.pch */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -277,9 +313,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-multimediaPlayer/Pods-multimediaPlayer-resources.sh",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -299,8 +346,10 @@
 				22BF5C902043A08B0076AEBB /* AppDelegate.m in Sources */,
 				226EE5A22043B7FC00AF0C8E /* CYTabBarController.m in Sources */,
 				226EE5AE2043B8C200AF0C8E /* CYBaseViewController.m in Sources */,
+				226EE5D12043F4CE00AF0C8E /* UIImage+CYComond.m in Sources */,
 				226EE5AB2043B84C00AF0C8E /* CYNavigationController.m in Sources */,
 				226EE5C32043D8DD00AF0C8E /* CYVideoPlayViewController.m in Sources */,
+				226EE5C82043E4FF00AF0C8E /* UIView+CYCategory.m in Sources */,
 				226EE5BD2043D86900AF0C8E /* CYAudioListViewController.m in Sources */,
 				226EE5B12043BA1D00AF0C8E /* CYVideoNavigationController.m in Sources */,
 				226EE5C02043D8A800AF0C8E /* CYAudioPlayViewController.m in Sources */,
@@ -441,6 +490,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GW9KE2DAPT;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/multimediaPlayer/Class/Main/PrefixHeader.pch";
 				INFOPLIST_FILE = multimediaPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -458,6 +508,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GW9KE2DAPT;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/multimediaPlayer/Class/Main/PrefixHeader.pch";
 				INFOPLIST_FILE = multimediaPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  multimediaPlayer
+//
+//  Created by ccy on 2018/2/26.
+//  Copyright © 2018年 ccy. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+/*-------------------头文件-----------------*/
+#import "UIView+CYCategory.h"
+#import "UIImage+CYComond.h"
+/*-------------------宏定义-----------------*/
+#define KScreenW  [UIScreen mainScreen].bounds.size.width
+#define KScreenH  [UIScreen mainScreen].bounds.size.height
+
+
+#endif /* PrefixHeader_pch */
