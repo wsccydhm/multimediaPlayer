@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223D92FB2046406600E27F29 /* CYAudioToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 223D92FA2046406600E27F29 /* CYAudioToolView.m */; };
 		226EE5A22043B7FC00AF0C8E /* CYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226EE5A12043B7FC00AF0C8E /* CYTabBarController.m */; };
 		226EE5A52043B81C00AF0C8E /* CYVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226EE5A42043B81C00AF0C8E /* CYVideoListViewController.m */; };
 		226EE5AB2043B84C00AF0C8E /* CYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226EE5AA2043B84C00AF0C8E /* CYNavigationController.m */; };
@@ -23,10 +24,15 @@
 		22BF5C982043A08B0076AEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BF5C972043A08B0076AEBB /* Assets.xcassets */; };
 		22BF5C9B2043A08B0076AEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BF5C992043A08B0076AEBB /* LaunchScreen.storyboard */; };
 		22BF5C9E2043A08B0076AEBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BF5C9D2043A08B0076AEBB /* main.m */; };
+		22D945BF20452778000EA569 /* CYAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D945BE20452778000EA569 /* CYAudioManager.m */; };
+		22D945C2204541DC000EA569 /* CYAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D945C1204541DC000EA569 /* CYAudioTool.m */; };
+		22D945C4204545F2000EA569 /* xcc.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22D945C3204545F2000EA569 /* xcc.mp3 */; };
 		892132A30B3101A132B96CCB /* libPods-multimediaPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2E06F1289729D8F4A514BD /* libPods-multimediaPlayer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		223D92F92046406600E27F29 /* CYAudioToolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYAudioToolView.h; sourceTree = "<group>"; };
+		223D92FA2046406600E27F29 /* CYAudioToolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYAudioToolView.m; sourceTree = "<group>"; };
 		226EE5A02043B7FC00AF0C8E /* CYTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYTabBarController.h; sourceTree = "<group>"; };
 		226EE5A12043B7FC00AF0C8E /* CYTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYTabBarController.m; sourceTree = "<group>"; };
 		226EE5A32043B81C00AF0C8E /* CYVideoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYVideoListViewController.h; sourceTree = "<group>"; };
@@ -58,6 +64,11 @@
 		22BF5C9A2043A08B0076AEBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22BF5C9C2043A08B0076AEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22BF5C9D2043A08B0076AEBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22D945BD20452778000EA569 /* CYAudioManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYAudioManager.h; sourceTree = "<group>"; };
+		22D945BE20452778000EA569 /* CYAudioManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYAudioManager.m; sourceTree = "<group>"; };
+		22D945C0204541DC000EA569 /* CYAudioTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYAudioTool.h; sourceTree = "<group>"; };
+		22D945C1204541DC000EA569 /* CYAudioTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYAudioTool.m; sourceTree = "<group>"; };
+		22D945C3204545F2000EA569 /* xcc.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xcc.mp3; sourceTree = "<group>"; };
 		7D44E3A87EC8725B9387B144 /* Pods-multimediaPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-multimediaPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-multimediaPlayer/Pods-multimediaPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		A86E814D33E9E43A1EC8E6AD /* Pods-multimediaPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-multimediaPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-multimediaPlayer/Pods-multimediaPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		EF2E06F1289729D8F4A514BD /* libPods-multimediaPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-multimediaPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,9 +86,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		223D92F82046401F00E27F29 /* AudioView */ = {
+			isa = PBXGroup;
+			children = (
+				223D92F92046406600E27F29 /* CYAudioToolView.h */,
+				223D92FA2046406600E27F29 /* CYAudioToolView.m */,
+			);
+			path = AudioView;
+			sourceTree = "<group>";
+		};
 		226EE5C42043E4AF00AF0C8E /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				22D945C0204541DC000EA569 /* CYAudioTool.h */,
+				22D945C1204541DC000EA569 /* CYAudioTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -132,6 +154,7 @@
 				22BF5C972043A08B0076AEBB /* Assets.xcassets */,
 				22BF5C992043A08B0076AEBB /* LaunchScreen.storyboard */,
 				22BF5C9C2043A08B0076AEBB /* Info.plist */,
+				22D945C3204545F2000EA569 /* xcc.mp3 */,
 				22BF5C9D2043A08B0076AEBB /* main.m */,
 			);
 			path = multimediaPlayer;
@@ -140,6 +163,8 @@
 		22BF5CA42043A69F0076AEBB /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				223D92F82046401F00E27F29 /* AudioView */,
+				22D945BB20452743000EA569 /* Manager */,
 				226EE5C52043E4BE00AF0C8E /* Category */,
 				226EE5C42043E4AF00AF0C8E /* Tool */,
 				22BF5CA72043A6D50076AEBB /* Main */,
@@ -184,6 +209,15 @@
 				226EE5CB2043EB8700AF0C8E /* PrefixHeader.pch */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		22D945BB20452743000EA569 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				22D945BD20452778000EA569 /* CYAudioManager.h */,
+				22D945BE20452778000EA569 /* CYAudioManager.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		52DA019481312CB995C95E7E /* Frameworks */ = {
@@ -239,6 +273,11 @@
 					22BF5C8A2043A08B0076AEBB = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -267,6 +306,7 @@
 			files = (
 				22BF5C9B2043A08B0076AEBB /* LaunchScreen.storyboard in Resources */,
 				22BF5C982043A08B0076AEBB /* Assets.xcassets in Resources */,
+				22D945C4204545F2000EA569 /* xcc.mp3 in Resources */,
 				22BF5C962043A08B0076AEBB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +383,7 @@
 				226EE5A52043B81C00AF0C8E /* CYVideoListViewController.m in Sources */,
 				22BF5C9E2043A08B0076AEBB /* main.m in Sources */,
 				226EE5B72043BC6B00AF0C8E /* CYAudioNavigationController.m in Sources */,
+				223D92FB2046406600E27F29 /* CYAudioToolView.m in Sources */,
 				22BF5C902043A08B0076AEBB /* AppDelegate.m in Sources */,
 				226EE5A22043B7FC00AF0C8E /* CYTabBarController.m in Sources */,
 				226EE5AE2043B8C200AF0C8E /* CYBaseViewController.m in Sources */,
@@ -350,8 +391,10 @@
 				226EE5AB2043B84C00AF0C8E /* CYNavigationController.m in Sources */,
 				226EE5C32043D8DD00AF0C8E /* CYVideoPlayViewController.m in Sources */,
 				226EE5C82043E4FF00AF0C8E /* UIView+CYCategory.m in Sources */,
+				22D945BF20452778000EA569 /* CYAudioManager.m in Sources */,
 				226EE5BD2043D86900AF0C8E /* CYAudioListViewController.m in Sources */,
 				226EE5B12043BA1D00AF0C8E /* CYVideoNavigationController.m in Sources */,
+				22D945C2204541DC000EA569 /* CYAudioTool.m in Sources */,
 				226EE5C02043D8A800AF0C8E /* CYAudioPlayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
