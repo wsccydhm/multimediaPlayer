@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -138,14 +139,61 @@
                                             <constraint firstAttribute="width" constant="100" id="TqX-pE-Xn7"/>
                                         </constraints>
                                     </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBc-Hh-LHx" customClass="CYLyricView">
+                                        <rect key="frame" x="0.0" y="350" width="375" height="79"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ivA-h8-zLx">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CYLyricTableViewCellID" id="6mn-pJ-az5" customClass="CYLyricTableViewCell">
+                                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6mn-pJ-az5" id="Kd9-lX-2bm">
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你好" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y46-80-aOE">
+                                                                    <rect key="frame" x="15" y="11" width="345" height="22"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailingMargin" secondItem="y46-80-aOE" secondAttribute="trailing" id="1hc-0l-I7n"/>
+                                                                <constraint firstItem="y46-80-aOE" firstAttribute="leading" secondItem="Kd9-lX-2bm" secondAttribute="leadingMargin" id="UJd-Jh-HXM"/>
+                                                                <constraint firstAttribute="bottomMargin" secondItem="y46-80-aOE" secondAttribute="bottom" id="cFu-1f-066"/>
+                                                                <constraint firstItem="y46-80-aOE" firstAttribute="top" secondItem="Kd9-lX-2bm" secondAttribute="topMargin" id="zYB-lr-pT1"/>
+                                                            </constraints>
+                                                        </tableViewCellContentView>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ivA-h8-zLx" firstAttribute="leading" secondItem="oBc-Hh-LHx" secondAttribute="leading" id="BMp-eM-2zN"/>
+                                            <constraint firstItem="ivA-h8-zLx" firstAttribute="top" secondItem="oBc-Hh-LHx" secondAttribute="top" id="K2U-No-xU8"/>
+                                            <constraint firstAttribute="bottom" secondItem="ivA-h8-zLx" secondAttribute="bottom" id="fYg-ox-wIm"/>
+                                            <constraint firstAttribute="trailing" secondItem="ivA-h8-zLx" secondAttribute="trailing" id="iTa-58-iML"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="tableView" destination="ivA-h8-zLx" id="8pi-RB-Inl"/>
+                                        </connections>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="oBc-Hh-LHx" firstAttribute="top" secondItem="uh8-DI-EXo" secondAttribute="bottom" constant="10" id="7XB-Yc-kyf"/>
                                     <constraint firstItem="I3h-lc-mtj" firstAttribute="centerX" secondItem="uh8-DI-EXo" secondAttribute="centerX" id="CgL-pk-2jD"/>
                                     <constraint firstItem="I3h-lc-mtj" firstAttribute="width" secondItem="uh8-DI-EXo" secondAttribute="width" constant="-150" id="HO3-F4-KyJ"/>
                                     <constraint firstItem="gu5-BW-Gfq" firstAttribute="centerX" secondItem="7Eb-ZT-bdh" secondAttribute="centerX" constant="33" id="KO8-Vo-z6o"/>
+                                    <constraint firstAttribute="trailing" secondItem="oBc-Hh-LHx" secondAttribute="trailing" id="QeI-oK-B1O"/>
                                     <constraint firstItem="I3h-lc-mtj" firstAttribute="centerY" secondItem="uh8-DI-EXo" secondAttribute="centerY" id="Qwu-tg-HZe"/>
                                     <constraint firstItem="gwO-cD-pTg" firstAttribute="centerY" secondItem="I3h-lc-mtj" secondAttribute="centerY" id="X0w-el-1BH"/>
+                                    <constraint firstItem="oBc-Hh-LHx" firstAttribute="leading" secondItem="7Eb-ZT-bdh" secondAttribute="leading" id="YBg-oy-aNe"/>
+                                    <constraint firstAttribute="bottom" secondItem="oBc-Hh-LHx" secondAttribute="bottom" id="YUy-Y1-fxu"/>
                                     <constraint firstItem="gwO-cD-pTg" firstAttribute="width" secondItem="I3h-lc-mtj" secondAttribute="width" id="bo2-iV-p2B"/>
                                     <constraint firstItem="uh8-DI-EXo" firstAttribute="leading" secondItem="7Eb-ZT-bdh" secondAttribute="leading" constant="50" id="gk6-cL-6q7"/>
                                     <constraint firstItem="uh8-DI-EXo" firstAttribute="top" secondItem="gu5-BW-Gfq" secondAttribute="bottom" constant="-100" id="hjG-5v-205"/>
@@ -209,13 +257,6 @@
                                         </constraints>
                                         <state key="normal" image="audio_next"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlP-wL-y3S">
-                                        <rect key="frame" x="38" y="0.0" width="89" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -240,7 +281,6 @@
                                     <outlet property="broadcastPaceSlider" destination="fhw-WY-gOv" id="3F7-aG-HKh"/>
                                     <outlet property="endLabel" destination="bJV-OU-wzd" id="gRq-ET-IDh"/>
                                     <outlet property="playButton" destination="7vA-E5-1sy" id="BKR-YI-fdd"/>
-                                    <outlet property="tempLabel" destination="nlP-wL-y3S" id="52T-sS-q9u"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -266,6 +306,7 @@
                         <outlet property="audioToolView" destination="GGk-Ko-gau" id="uf3-x3-JcO"/>
                         <outlet property="backImageView" destination="7kt-FV-jzc" id="63G-xp-nKp"/>
                         <outlet property="diskImageView" destination="uh8-DI-EXo" id="bni-SO-guY"/>
+                        <outlet property="lyricView" destination="oBc-Hh-LHx" id="ok8-6x-eDv"/>
                         <outlet property="needleImageView" destination="gu5-BW-Gfq" id="QFK-Cc-EUy"/>
                         <outlet property="placeholderImageView" destination="gwO-cD-pTg" id="fy1-rn-4GN"/>
                         <outlet property="waitActivity" destination="I3h-lc-mtj" id="ueo-zp-Hb0"/>

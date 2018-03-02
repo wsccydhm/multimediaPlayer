@@ -9,6 +9,7 @@
 #import "CYAudioPlayViewController.h"
 #import "CYAudioManager.h"
 #import "CYAudioToolView.h"
+#import "CYLyricView.h"
 @interface CYAudioPlayViewController () <CYAudioManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *needleImageView;
@@ -17,9 +18,10 @@
 @property (weak, nonatomic) IBOutlet UIImageView *backImageView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *waitActivity;
 @property (weak, nonatomic) IBOutlet CYAudioToolView *audioToolView;
-@property (strong, nonatomic) CYAudioManager *audioManager;
-@property (assign, nonatomic) BOOL     isPlay;
-@property (weak, nonatomic) IBOutlet UILabel *tempLabel;
+@property (weak, nonatomic) IBOutlet CYLyricView *lyricView;
+@property (strong, nonatomic) CYAudioManager         *audioManager;
+@property (assign, nonatomic) BOOL                   isPlay;
+
 
 @property (weak, nonatomic) CADisplayLink *displayLink;
 @property (assign, nonatomic) NSInteger listenTime;
